@@ -11,9 +11,11 @@ int binary(int x[], int n, int key)
 		}
 		else if (key > x[mid])
 		{
+			low = mid+1;
 		}
 		else
 		{
+			high = mid -1;
 		}
 	}
 	low = mid + 1;
